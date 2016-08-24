@@ -1,0 +1,26 @@
+<center>
+  <h2> Recipes</h2>
+  <table border='9' bgcolor="#5f9ea0">
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Ingredients</th>
+
+
+    </tr>
+
+    <% @menus.each do |f|%>
+        <tr>
+
+          <td><%= f.name%></td>
+          <td><%= f.price %></td>
+          <td><%=f.ingredient%></td>
+          <td><%= link_to 'Delete', f, method: :delete,
+                          data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+    <% end %>
+  </table>
+  <br>
+
+</center>
+
