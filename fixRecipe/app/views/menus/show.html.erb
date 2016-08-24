@@ -1,0 +1,19 @@
+<center>
+  <h2>Recipe details</h2>
+  <table border='9'>
+    <tr>
+      <td>Name</td>
+      <td>Price</td>
+      <td>Ingredients</td>
+
+
+    </tr>
+    <tr>
+
+      <td><%= @menu.name%></td>
+      <td><%= @menu.price %></td>
+      <td><%=@menu.ingredient%></td>
+
+  </table>
+  <%= link_to 'Go back', menus_path %>
+</center>
