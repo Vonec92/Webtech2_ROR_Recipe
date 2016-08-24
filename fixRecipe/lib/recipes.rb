@@ -30,7 +30,7 @@ end
 
 def addIngredient(x)
   if @ingredients.include?(x)
-    puts 'already exists in array'
+    puts 'already exists in array,please change'
 
   else
     @ingredients.push(x)
